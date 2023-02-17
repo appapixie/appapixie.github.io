@@ -44,12 +44,3 @@ $("#agree").click(function(){
     $("#flexCheckDefault").attr('disabled', false);
 });
 
-// 초대버튼 활성화 비활성화.
-$("#flexCheckDefault").change( function(){
-    var imChecked = $(this).is(":checked");
-    if (imChecked == true) {
-        $("#inviteButton").attr('disabled', false);
-    } else {
-        $("#inviteButton").attr('disabled', true);
-    }
-});
