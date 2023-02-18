@@ -14,6 +14,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../../styles.css" rel="stylesheet" />
     </head>
@@ -52,101 +57,190 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <h2 class="section-heading"> 명령어 </h2>
-
-                        <details>
-                            <summary> <b> /vhelp </b> </summary>
-                            <p> counytry: <b>필수선택: 한국어|日本語 </b> <br>도움말을 출력합니다.</p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219721127-95b6ebd3-470f-4b2b-9091-6c02d0e7ea7e.png"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /region </b> </summary>
-                            <p> counytry: <b>필수선택: 한국어|日本語 </b> <br>언어를 설정합니다.<br>기본값을 한국어입니다.</p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219728688-ccfaa5ea-f83c-4b48-a1ed-74e4aa082140.png"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /vchannel </b> </summary>
-                            <p>전용채널을 생성합니다.</p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219731446-2c55b7da-8cd6-4514-97d8-9ba708e96835.png"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /vchannelcheck </b> </summary>
-                            <p>전용채널을 확인합니다.</p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219733681-487d0e3d-bfa3-40bd-885b-ee392077e96e.png"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /vchannelupdate </b> </summary>
-                            <p>
-                                lobby: <b>필수선택: 음성채널</b> <br>
-                                attack: <b>필수선택: 음성채널</b> <br>
-                                defend: <b>필수선택: 음성채널 </b> <br>
-                                전용채널을 변경합니다.
-                            </p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219735170-4dca39c0-bac3-4451-91b6-7f5032e78ad4.png"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /vrank </b> </summary>
-                            <p>
-                                tier: <b>자유선택: 자신의 티어</b> <br>
-                                티어를 등록하거나, 등록된 티어를 확인합니다.<br>
-                                tier옵션을 미입력시 등록된 티어를 확인합니다.
-                            </p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219742190-25c2af08-45de-4aed-b30f-673918dae662.png"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /vteam </b> </summary>
-                            <p>
-                                member: <b>자유선택: 제외할 인원</b> <br>
-                                랜덤으로 팀을 나눕니다.<br>
-                                <b>member</b>옵션을 사용해 제외인원을 선택할수있습니다.<br>
-                                <b>Reselect</b> 버튼을 눌러 팀을 다시 정할수있습니다.<br>
-                                <b>move to Lobby</b> 버튼을 눌러 모든 인원을 로비채널로 이동시킵니다.<br>
-                                <b>move to TeamVoice</b> 버튼을 눌러 팀에 맞는 채널로 이동시킵니다.
-                            </p>
-                            <li> 랜덤팀나누기 </li>
-                            <img src="https://user-images.githubusercontent.com/59546443/219748463-8db84bf3-2d86-4140-9043-a602e4317c5a.gif"/>
-
-                            <li> 제외 예제 </li>
-                            <img src="https://user-images.githubusercontent.com/59546443/219748440-a56e3104-e852-4031-8afe-655bb6bb6447.gif"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /vmap </b> </summary>
-                            ban1: <b>자유선택: 밴할 맵</b> <br>
-                            ban2: <b>자유선택: 밴할 맵</b> <br>
-                            ban3: <b>자유선택: 밴할 맵</b> <br>
-                            랜덤으로 맵을 선택합니다.<br>
-                            <b>Ban</b>옵션을 이용해 3개 까지 맵을 밴할수있습니다.<br>
-                            이미 나온맵은 전체맵이 나올때까지 나오지않습니다.<br>
-                            <b>Reselect Map</b> 버튼을 눌러 맵을 다시 뽑을수있습니다.<br>
-                            <b>Map Reset</b> 버튼을 눌러 나온 맵리스트를 초기화할수있습니다.
-                            <img src="https://user-images.githubusercontent.com/59546443/219757135-cf7234f2-2577-4747-862b-43741605e2ff.gif"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /schedule </b> </summary>
-                            <p> 모든인원에게 일정을 공지합니다. </p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219762453-f7274358-9a55-4b7e-aa7f-361e5f1462c2.gif"/>
-                        </details>
-
-                        <details>
-                            <summary> <b> /ping </b> </summary>
-                            <p> 봇의 반응속도를 출력합니다. </p>
-                            <img src="https://user-images.githubusercontent.com/59546443/219763804-8bf880c2-af43-44e4-8943-f50a82735d18.png"/>
-                        </details>
 
                         <h2 class="section-heading"> 추천사용순서 </h2>
-                        <p> 1. /region 명령어로 나라를 등록합니다. </p>
-                        <p> 2. /vchannel 명령어로 전용채널을 등록합니다. </p>
-                        <p> 3. /vrank 명령어로 랭크를 등록합니다. </p>
-                        <p> 4. /vteam 명령어를 사용하여 팀을 나눕니다. </p>
-                        <p> 5. /vmap 명령어로 맵을 정합니다. </p>
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                1. /region 명령어로 나라를 등록합니다.<br>
+                                2. /vchannel 명령어로 전용채널을 등록합니다.<br>
+                                3. /vrank 명령어로 랭크를 등록합니다.<br>
+                                4. /vteam 명령어를 사용하여 팀을 나눕니다.<br>
+                                5. /vmap 명령어로 맵을 정합니다.
+                            </span>
+                        </div>
+
+                        <h2 class="section-heading"> 명령어 </h2>
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /vhelp </b><br>
+                                도움말을 출력합니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b>
+                                    </summary>
+                                    <span class="helpspan">
+                                        <b> 명령어 사용예시 : /vhelp [언어] </b><br>
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219721127-95b6ebd3-470f-4b2b-9091-6c02d0e7ea7e.png"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /region </b> <br>
+                                언어를 설정합니다.<br>기본값은 한국어입니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /region 한국어 </b><br>
+                                    </span>
+                                    <img class="imgsize" style="height: 500px; width: 400px;" src="https://user-images.githubusercontent.com/59546443/219728688-ccfaa5ea-f83c-4b48-a1ed-74e4aa082140.png"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /vchannel </b> <br>
+                                전용채널을 생성합니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /vchannel </b><br>
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219731446-2c55b7da-8cd6-4514-97d8-9ba708e96835.png"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /vchannelcheck </b> <br>
+                                전용채널을 확인합니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /vchannelcheck </b><br>
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219733681-487d0e3d-bfa3-40bd-885b-ee392077e96e.png"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /vchannelupdate </b> <br>
+                                전용채널을 변경합니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /vchannelupdate [로비채널] [공격방채널] [수비방채널] </b><br>
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219735170-4dca39c0-bac3-4451-91b6-7f5032e78ad4.png"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /vrank </b> <br>
+                                티어를 등록하거나, 등록된 티어를 확인합니다.<br>
+                                tier 옵션을 미입력시 등록된 티어를 확인합니다.
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /rank [(선택)자신의 티어] </b><br>
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219742190-25c2af08-45de-4aed-b30f-673918dae662.png"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /vteam </b> <br>
+                                랜덤으로 팀을 나눕니다.
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /vteam [(선택)제외할인원] </b><br>
+                                        <b>member</b>옵션을 사용해 제외 인원을 선택할 수 있습니다.<br>
+                                        <b>Reselect</b> 버튼을 눌러 팀을 다시 정할 수 있습니다.<br>
+                                        <b>move to Lobby</b> 버튼을 눌러 모든 인원을 로비채널로 이동시킵니다.<br>
+                                        <b>move to TeamVoice</b> 버튼을 눌러 팀에 맞는 채널로 이동시킵니다.
+                                    </span>
+                                    <li style="padding-top: 30px;"> 팀나누기 및 버튼 예시 </li>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219748463-8db84bf3-2d86-4140-9043-a602e4317c5a.gif"/>
+                                    <li style="padding-top: 30px;"> 제외 예시 </li>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219748440-a56e3104-e852-4031-8afe-655bb6bb6447.gif"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /vmap </b> <br>
+                                랜덤으로 맵을 선택합니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /vmap [(선택)맵] [(선택)맵] [(선택)맵] </b><br>
+                                        <b>Ban</b>옵션을 이용해 3개까지 맵을 금지할 수 있습니다.<br>
+                                        이미 나온맵은 전체맵이 나올 때까지 나오지 않습니다.<br>
+                                        <b>Reselect Map</b> 버튼을 눌러 맵을 다시 뽑을 수 있습니다.<br>
+                                        <b>Map Reset</b> 버튼을 눌러 나온 맵리스트를 초기화할 수 있습니다.
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219757135-cf7234f2-2577-4747-862b-43741605e2ff.gif"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /schedule </b> <br>
+                                모든인원에게 일정을 공지합니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /schedule </b><br>
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219762453-f7274358-9a55-4b7e-aa7f-361e5f1462c2.gif"/>
+                                </details>
+                            </span>
+                        </div>
+
+                        <div class="helpdiv">
+                            <span class="helpspan">
+                                <b> /ping </b> <br>
+                                봇의 반응속도를 출력합니다.<br>
+                                <details> 
+                                    <summary style="color: rgb(81, 81, 145);">
+                                        <b> 자세히 보기 </b> 
+                                    </summary>
+                                    <span class="helpspan"> 
+                                        <b> 명령어 사용예시 : /ping </b><br>
+                                    </span>
+                                    <img class="imgsize" src="https://user-images.githubusercontent.com/59546443/219864487-4899c562-930f-4c50-93a6-8a6f60ece3a5.png"/>
+                                </details>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
